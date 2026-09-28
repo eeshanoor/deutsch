@@ -1,0 +1,25 @@
+SIEBEN TAGE DEUTSCH - iPhone app setup
+
+The app has to be online once (free hosting), then it installs on your iPhone and works offline.
+
+1. PUT IT ONLINE (on your PC, about 5 minutes, free)
+   a. Go to github.com and sign in (or create a free account).
+   b. Click "New" repository. Name it: deutsch. Choose Public. Click "Create repository".
+   c. Click "uploading an existing file". Drag in all the files from this folder
+      (index.html, manifest.webmanifest, sw.js, the three icon PNGs). Click "Commit changes".
+   d. Open Settings -> Pages. Under "Branch" pick "main" and "/ (root)", then Save.
+   e. Wait 1-2 minutes. Your app is at: https://YOUR-USERNAME.github.io/deutsch/
+
+2. INSTALL ON IPHONE
+   a. Open that link in Safari (it must be Safari).
+   b. Tap the Share button -> "Add to Home Screen" -> Add.
+   c. Open it from the new "Deutsch" icon once while online. After that it works offline.
+
+3. FIRST-TIME IPHONE SETTINGS
+   - Microphone: tap Allow when the app asks.
+   - Speech recognition: Settings -> Siri -> turn on Siri, and
+     Settings -> General -> Keyboard -> Enable Dictation.
+   - German voice: Settings -> Accessibility -> Spoken Content -> Voices -> German -> download Anna.
+   - If the mic still won't work, the app switches to dictation: tap the keyboard's mic key and speak.
+
+Your progress is saved on the phone. Deleting the home-screen icon deletes it.

@@ -1,25 +1,28 @@
-SIEBEN TAGE DEUTSCH - iPhone app setup
+SIEBEN TAGE DEUTSCH - phone app (iPhone and Android)
 
-The app has to be online once (free hosting), then it installs on your iPhone and works offline.
+Latest version: includes the Job tab (full-time plan with tests after every item, topic, day and week).
 
-1. PUT IT ONLINE (on your PC, about 5 minutes, free)
-   a. Go to github.com and sign in (or create a free account).
-   b. Click "New" repository. Name it: deutsch. Choose Public. Click "Create repository".
-   c. Click "uploading an existing file". Drag in all the files from this folder
-      (index.html, manifest.webmanifest, sw.js, the three icon PNGs). Click "Commit changes".
-   d. Open Settings -> Pages. Under "Branch" pick "main" and "/ (root)", then Save.
-   e. Wait 1-2 minutes. Your app is at: https://YOUR-USERNAME.github.io/deutsch/
+1. PUT IT ONLINE (on your PC)
+   New repo: github.com -> New repository "deutsch" (Public) -> "uploading an existing file".
+   Already have the repo: open it -> Add file -> Upload files.
+   Drag in ALL these files: index.html, sw.js, manifest.webmanifest, icon-180.png, icon-192.png, icon-512.png
+   (same names replace the old ones) -> Commit changes.
+   First time only: Settings -> Pages -> Branch "main", "/ (root)" -> Save.
+   Wait 1-2 minutes. Link: https://YOUR-USERNAME.github.io/deutsch/
 
-2. INSTALL ON IPHONE
-   a. Open that link in Safari (it must be Safari).
-   b. Tap the Share button -> "Add to Home Screen" -> Add.
-   c. Open it from the new "Deutsch" icon once while online. After that it works offline.
+2. INSTALL
+   iPhone: open the link in Safari -> Share -> Add to Home Screen -> Add.
+   Android: open the link in Chrome -> menu (three dots) -> Install app (or Add to Home screen).
+   Open it once while online. After that it works offline.
 
-3. FIRST-TIME IPHONE SETTINGS
-   - Microphone: tap Allow when the app asks.
-   - Speech recognition: Settings -> Siri -> turn on Siri, and
-     Settings -> General -> Keyboard -> Enable Dictation.
-   - German voice: Settings -> Accessibility -> Spoken Content -> Voices -> German -> download Anna.
-   - If the mic still won't work, the app switches to dictation: tap the keyboard's mic key and speak.
+3. ALREADY INSTALLED? GET THE UPDATE
+   Open the app while online, close it completely, open it again.
+   You should see the first tab "Job - Full-time plan".
 
-Your progress is saved on the phone. Deleting the home-screen icon deletes it.
+4. FIRST-TIME SETTINGS
+   Microphone: tap Allow when asked.
+   iPhone: Settings -> Siri on, and Settings -> General -> Keyboard -> Enable Dictation.
+           German voice: Settings -> Accessibility -> Spoken Content -> Voices -> German.
+   Android: Settings -> Text-to-speech -> Google engine -> Language Deutsch.
+
+Progress is saved on each phone separately.

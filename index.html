@@ -2741,7 +2741,7 @@ function enMatch(en,heard){
   const hw=String(heard||"").toLowerCase().replace(/[^a-z0-9' ]/g," ").split(/\s+/).filter(Boolean).map(w=>{ const k=EN_NUM.indexOf(w); return k>=0?String(k):w; });
   const vars=String(en).toLowerCase().replace(/\(.*?\)/g," ").split(/[\/,;]/).map(s=>s.replace(/^\s*to\s+/,"").replace(/[^a-z0-9' ]/g," ").trim()).filter(Boolean);
   const stop=new Set(["a","an","the","to","of","be","is"]); let best=0;
-  vars.forEach(v=>{ const ws=v.split(/\s+/).filter(w=>!stop.has(w)); if(!ws.length) return; const s=ws.filter(w=>hw.includes(w)||hw.includes(w.replace(/s$/,""))||hw.includes(w+"s")).length/ws.length; if(s>best) best=s; });
+  vars.forEach(v=>{ const all=v.split(/\s+/).filter(Boolean); let ws=all.filter(w=>!stop.has(w)); if(!ws.length) ws=all; if(!ws.length) return; const s=ws.filter(w=>hw.includes(w)||hw.includes(w.replace(/s$/,""))||hw.includes(w+"s")).length/ws.length; if(s>best) best=s; });
   return best;
 }
 function listenP(box,lang){ return new Promise(res=>{ if(!dictMode()){ box.innerHTML=`<span class="turn">Listening…</span>`; beep(); }
